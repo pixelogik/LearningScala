@@ -23,6 +23,14 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
+// We make this abstract base class so that all events have the same super class. 
+// This allows us to put them into lists independet of the actual type.
+abstract class AbstractEvent
+
+case class Event(name: String, locationName: String, ticketPrice: Float) extends AbstractEvent
+
+// Use case objects if there are no parameters / properties. One singleton object is enough for this
+case object XMAS extends AbstractEvent
 
 //////////////////////////////////////////////////////////////////////////////////////////
 

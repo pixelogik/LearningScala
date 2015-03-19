@@ -22,8 +22,43 @@
 
 object CaseClassesAndPatternMatchingApp extends App {
 
-  println("Hi there...")
+	val events = List( 
+			Event("The Concert", "The Concert Hall", 12.50f),
+			Event("The Other Concert", "The Concert Hall", 21.00f),
+			Event("The Big Concert", "The Arena", 45.00f),
+			XMAS,
+			Event("The Indie Concert", "The Small Club", 8.50f)	
+		)
 
+	for (event <- events) {
+
+		println("--------")
+
+		event match {
+			case Event(name, locationName, ticketPrice) => {
+				println("Event name = "+name)
+				println("Location name = "+locationName)
+				println("Ticket price = "+ticketPrice)
+			}
+			case XMAS => println("It is XMAS!!")
+		}
+	}
+
+	// Case classes auto-implement equal()
+ 	val a = Event("The Indie Concert", "The Small Club", 8.50f)	
+	val b = Event("The Indie Concert", "The Small Club", 8.50f)	
+	println("a==b says "+(a == b))
+
+	// Because equal() is auto-implemented eventSet will only contain one item, because of a==b
+	val eventSet = Set(a, b)
+	println(eventSet)
+
+	// Case classes bring a copy() method. Let's make a copy with changed ticket price
+	val c = a.copy(ticketPrice = 20.0f)
+	println(c)
+
+
+	
 }
 
 
