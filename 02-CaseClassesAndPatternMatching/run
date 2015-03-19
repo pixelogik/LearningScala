@@ -1,0 +1,2 @@
+scalac CaseClassesAndPatternMatching.scala CaseClassesAndPatternMatchingApp.scala
+scala CaseClassesAndPatternMatchingApp

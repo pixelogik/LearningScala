@@ -1,0 +1,2 @@
+scalac Traits.scala TraitsApp.scala
+scala TraitsApp
