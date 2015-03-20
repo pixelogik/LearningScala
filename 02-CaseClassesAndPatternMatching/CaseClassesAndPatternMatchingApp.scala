@@ -56,8 +56,6 @@ object CaseClassesAndPatternMatchingApp extends App {
 	// Case classes bring a copy() method. Let's make a copy with changed ticket price
 	val c = a.copy(ticketPrice = 20.0f)
 	println(c)
-
-
 	
 }
 
