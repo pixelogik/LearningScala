@@ -1,0 +1,2 @@
+scalac SequenceComprehensions.scala SequenceComprehensionsApp.scala
+scala SequenceComprehensionsApp

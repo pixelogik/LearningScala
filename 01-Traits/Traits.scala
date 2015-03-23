@@ -47,7 +47,7 @@ trait TraitForParents extends ParentClass {
   def traitMethod = println("This is the trait method only useable by parent classes..")
 }
 
-// This trait can only be used by everybody
+// This trait can be used by everybody
 trait JustAnotherTraitForEverybody {
   def academicTitle = println("Dr.")
 }

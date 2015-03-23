@@ -37,7 +37,7 @@ class Office(val name: String, val city: String, val peopleCapacity: Int, val re
 }
 
 // Companion objects are related to the class with the same name and defined in the same file. 
-// They are storing type methods that in Java you would declare static. 
+// They are storing type methods that you would declare static in Java. 
 object Office {
 
 	// This apply method allows us to create instances of the Office class by calling 

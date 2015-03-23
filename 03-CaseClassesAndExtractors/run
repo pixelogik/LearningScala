@@ -1,0 +1,2 @@
+scalac CaseClassesAndExtractors.scala CaseClassesAndExtractorsApp.scala
+scala CaseClassesAndExtractorsApp

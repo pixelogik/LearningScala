@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-object ExtractorsApp extends App {
+object CaseClassesAndExtractorsApp extends App {
 
 	// Here we create an instance of Office using the default class constructor. 
 	// When using a class constructor we have to use the keyword "new".
